@@ -1,134 +1,102 @@
-# Blinkit Sales Analysis | Power BI
+Global Airbnb Performance Dashboard | Power BI
+Project Overview
+This project focuses on analyzing Airbnb's listings, pricing, customer ratings, review behavior, and host trust across 10 global cities using Power BI. The main goal is to understand how Airbnb has grown over time, compare city-level performance, and identify useful business insights from the available data.
 
-## Project Overview
+The dashboard brings important listing, review, and rating metrics together in an interactive format, making it easier to explore the performance of cities, property types, room types, and host characteristics.
 
-This project focuses on analyzing Blinkit's sales, customer ratings, and outlet performance using Power BI. The main goal is to understand sales patterns, compare different product and outlet categories, and identify useful business insights from the available data.
-
-The dashboard brings important sales and customer-related metrics together in an interactive format, making it easier to explore the performance of products, outlets, locations, and outlet characteristics.
-
-## Business Objective
-
-The objective of this analysis is to evaluate Blinkit's overall sales performance and understand how factors such as product type, fat content, outlet size, location, and outlet type affect business performance.
+Business Objective
+The objective of this analysis is to evaluate Airbnb's overall performance and understand how factors such as city, room type, pricing, seasonality, and host verification affect listings, reviews, and customer satisfaction.
 
 The analysis uses KPIs and interactive Power BI visualizations to help identify trends, performance differences, and areas that may require further attention.
 
-## Key Performance Indicators
-
+Key Performance Indicators
 The dashboard tracks the following major KPIs:
 
-* **Total Sales** – Total revenue generated from the items available in the dataset.
-* **Average Sales** – Average revenue generated per item or transaction.
-* **Number of Items** – Total number of items represented in the sales data.
-* **Average Rating** – Average customer rating received by the products.
+Listings – Total number of Airbnb listings in the dataset (2,79,712).
+Cities – Number of cities covered in the analysis (10).
+Hosts – Total number of unique hosts (1,82,024).
+Property Types – Number of distinct property types listed (144).
+Reviews – Total number of customer reviews (5,373K).
+Analysis Performed
+1. New Listings Over Time
+Analyzed the number of new listings from 2008 to 2020 across entire places, private rooms, shared rooms, and hotel rooms.
 
-## Analysis Performed
+The analysis divides Airbnb's journey into six stages: Introduction, Growth, Maturity, Decline, Reinvention, and COVID-19. It shows that new listings peaked in 2015, slowed in 2016–2017 due to tighter local regulations, recovered from 2018, and dropped sharply in 2020 because of the COVID-19 pandemic.
 
-### 1. Sales by Fat Content
+2. Market Share by City
+Compared listings across the 10 cities using a Pareto-style chart with cumulative percentage.
 
-Analyzed total sales across different fat-content categories to understand whether product fat content has any noticeable relationship with sales.
+The chart also separates Superhost and non-Superhost listings. Paris, New York, and Sydney together account for almost half of total listings and 59% of total reviews, with Paris having the most listings and reviews.
 
-The analysis also compares:
+3. Average Price by Room Type
+Compared average prices across hotel rooms, entire places, shared rooms, and private rooms.
 
-* Average Sales
-* Number of Items
-* Average Rating
+Hotel rooms had the highest average price ($800), followed by entire places ($673), shared rooms ($580), and private rooms ($462).
 
-### 2. Sales by Item Type
+4. Ratings by City
+Created a heatmap of guest ratings across Accuracy, Cleanliness, Communication, Location, and Value for each city.
 
-Compared different item categories based on their sales performance.
+Users can switch between overall and detailed rating views. Mexico City and Rio de Janeiro are the best-rated cities, while Hong Kong and Istanbul are the lowest. Cleanliness and value for money generally score the lowest.
 
-This helps identify which types of products contribute more to overall sales and how their average sales, item count, and customer ratings differ.
+5. Review Frequency
+Analyzed how many times each customer wrote a review.
 
-### 3. Fat Content by Outlet
+86.5% of reviewers wrote a review only once and 98.8% wrote 3 or fewer. One reviewer wrote 283 reviews, which was flagged as a possible data error or an unusually active traveler.
 
-Analyzed the distribution of products based on fat content across different outlets.
+6. Seasonality of Reviews
+Examined the share of monthly reviews across Mexico City, New York, Paris, Rome, and Sydney.
 
-The visualization also allows comparison of key metrics such as total sales, average sales, number of items, and average rating across outlet categories.
+Paris and Rome dominate review share from April to August, reflecting peak European summer travel, while New York sees an increase in November and December during the holiday season.
 
-### 4. Sales by Outlet Establishment
+7. Host Trust
+Created a consolidated view of host trust signals based on identity verification and profile picture availability.
 
-Examined sales performance based on the establishment period of outlets.
+66.9% of hosts are fully verified with a profile picture, while unverified and anonymous profiles are kept to a minimum (0.1%–0.3%).
 
-This helps understand how outlets with different establishment years or age categories perform in terms of sales.
-
-### 5. Percentage of Sales by Outlet Size
-
-Analyzed how total sales are distributed across different outlet sizes.
-
-This provides a better understanding of whether smaller, medium, or larger outlets contribute more to the overall sales.
-
-### 6. Sales by Outlet Location
-
-Compared sales across different outlet locations to understand the geographic distribution of business performance.
-
-This helps identify locations that contribute more or less to overall sales.
-
-### 7. Overall Metrics by Outlet Type
-
-Created a consolidated view of the major KPIs across different outlet types.
-
-The comparison includes:
-
-* Total Sales
-* Average Sales
-* Number of Items
-* Average Rating
-
-This provides an overall picture of how different outlet types are performing.
-
-## Tools & Technologies
-
-* **Power BI**
-* **Power Query**
-* **DAX**
-* **Microsoft Excel**
-* **Data Visualization**
-
-## Dashboard Features
-
+Tools & Technologies
+Power BI
+Power Query
+DAX
+Microsoft Excel
+Data Visualization
+Dashboard Features
 The Power BI dashboard includes interactive visuals that allow users to explore the data from different perspectives.
 
 Users can compare:
 
-* Product categories
-* Fat-content categories
-* Outlet types
-* Outlet sizes
-* Outlet locations
-* Outlet establishment periods
-* Sales and customer-rating metrics
-
-## Project Workflow
-
-1. Collected and reviewed the Blinkit sales dataset.
-2. Cleaned and transformed the data using Power Query.
-3. Prepared the data for analysis and visualization.
-4. Created required KPIs using DAX.
-5. Built interactive charts and visuals in Power BI.
-6. Compared sales performance across products and outlets.
-7. Used the dashboard to identify useful patterns and business insights.
-
-## Key Learning
-
-Through this project, I gained practical experience in working with business datasets and converting raw data into an interactive Power BI dashboard.
+Cities
+Room types
+Property types
+Superhost and non-Superhost listings
+Rating categories (overall and detailed)
+Review frequency
+Monthly review seasonality
+Host verification and trust signals
+Project Workflow
+Collected and reviewed the Airbnb dataset.
+Cleaned and transformed the data using Power Query.
+Prepared the data for analysis and visualization.
+Created required KPIs and measures using DAX.
+Built interactive charts and visuals in Power BI.
+Compared performance across cities, room types, and time periods.
+Used the dashboard to identify useful patterns and business insights.
+Key Learning
+Through this project, I gained practical experience in working with large business datasets and converting raw data into an interactive Power BI dashboard.
 
 The project helped me practice:
 
-* Data cleaning and transformation
-* KPI creation
-* DAX calculations
-* Power BI visualizations
-* Business-oriented data analysis
-* Comparing performance across multiple dimensions
-* Building an interactive dashboard
+Data cleaning and transformation
+KPI creation
+DAX calculations
+Power BI visualizations
+Data storytelling with annotated charts
+Identifying data anomalies
+Comparing performance across multiple dimensions
+Building an interactive dashboard
+Project Outcome
+The final dashboard provides a structured view of Airbnb's growth, city performance, customer ratings, and host trust. It makes it easier to compare cities and room types and understand the factors associated with listings, reviews, and guest satisfaction.
 
-## Project Outcome
+Author
+Omkar Ashok Jelugadekar
 
-The final dashboard provides a structured view of Blinkit's sales and outlet performance. It makes it easier to compare different product and outlet characteristics and understand the factors associated with sales performance.
-
-## Author
-
-**Omkar Ashok Jelugadekar**
-
-B.Tech – Electronics and Communication Engineering
-Data Analysis | Power BI | SQL | Python
+B.Tech – Electronics and Communication Engineering Data Analysis | Power BI | SQL | Python
